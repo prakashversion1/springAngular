@@ -22,7 +22,6 @@ public class UiApplication {
 
     @RequestMapping("/resource")
     public Map<String,Object> home(){
-        System.out.println("Hello from the home controller");
         Map<String,Object> model = new HashMap<String,Object>();
         model.put("id", UUID.randomUUID().toString());
         model.put("content","Hello World");
